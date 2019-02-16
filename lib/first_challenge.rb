@@ -20,7 +20,7 @@ def first_challenge
       value == "strawberry"
       end
     end
-    contacts
   end
+      contacts
 end
 

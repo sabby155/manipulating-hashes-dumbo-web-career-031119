@@ -14,11 +14,13 @@ def first_challenge
   }
 
   #your code here
-  contacts["Freddy Mercury"].each do |key, value|
+ contacts["Freddy Mercury"].each do |key, value|
     if key == :favorite_icecream_flavors
-      value.delete_if("strawberry")
+      value.delete_if do |value|
+      value == "strawberry"
+      end
     end
+    contacts
   end
-  contacts
 end
 
